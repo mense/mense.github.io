@@ -61,9 +61,6 @@ jQuery(document).ready(function ($) {
 			//pass the data
 			data: data,
 
-			//Do not cache the page
-			cache: false,
-
 		    dataType: "json",
 
 			//success

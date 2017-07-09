@@ -64,6 +64,8 @@ jQuery(document).ready(function ($) {
 			//Do not cache the page
 			cache: false,
 
+		    dataType: "json",
+
 			//success
 			success: function (html) {
 				//if contact.php returned 1/true (send mail success)

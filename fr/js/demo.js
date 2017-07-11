@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
 					//show the success message
 					$('.done').fadeIn('slow');
 
-					$(".form").hide();
+					$("form").hide();
 
 				} else alert('Sorry, unexpected error. Please try again later.');
 			}

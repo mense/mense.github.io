@@ -53,7 +53,7 @@ jQuery(document).ready(function ($) {
 		//start the ajax
 		$.ajax({
 			//this is the php file that processes the data and sends email
-			url: "https://formspree.io/new-business@mense-crm.fr",
+			url: "https://formspree.io/moreleseb@hotmail.fr",
 
 			//GET method is used
 			type: "POST",

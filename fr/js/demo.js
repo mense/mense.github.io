@@ -38,25 +38,18 @@ jQuery(document).ready(function ($) {
 		$.ajax({
 			//this is the php file that processes the data and sends email
 			url: "https://formspree.io/moreleseb@hotmail.fr",
-
 			//GET method is used
 			type: "POST",
-
 			//pass the data
 			data: data,
-
 		    dataType: "json",
-
 			//success
 			success: function (html) {
 				//if contact.php returned 1/true (send mail success)
 				if (html.success) {
-
 					//show the success message
 					$('.done').fadeIn('slow');
-
 					$("form").hide();
-
 				} else alert('Sorry, unexpected error. Please try again later.');
 			}
 		});

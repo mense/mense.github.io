@@ -50,7 +50,7 @@ jQuery(document).ready(function ($) {
 			//success
 			success: function (html) {
 				//if contact.php returned 1/true (send mail success)
-				if (html.success == "email sent") {
+				if (html.success) {
 
 					//show the success message
 					$('.done').fadeIn('slow');

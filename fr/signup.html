@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Mense CRM - Cloud solution and possibilities</title>
+<title>Mense CRM - Demandez votre démo de Mense CRM</title>
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
@@ -21,10 +21,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-		if (window.navigator.language == 'fr') {
+     <script>
+		if (window.navigator.language !== 'fr') {
 			var page_name = window.location.pathname.split("/").pop();
-			window.location.replace("fr/" + page_name);
+			window.location.replace("/" + page_name);
 		}
     </script>
 </head>
@@ -65,11 +65,29 @@
 </div>
 <!-- /.container -->
 </nav>
-<section >
+<section id="contact">
 <div class="container">
-	<div class="row">
-	<h1>Cloud solutions and possibilities</h1>
-	<p>TODO</p>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2 text-center">
+		<h2 class="section-heading"><b>MENSE CRM</b><br>POUR MA STRUCTURE</h2>
+		<hr class="primary">
+		<p>
+			L'ensemble des fonctionnalités de Mense CRM sont disponibles en un instant. Vous allez voir comment nous allons faire décoller votre activité.
+		</p>
+		<div class="regularform">
+			<div class="done">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					Votre message a correctement été envoyé envoyé à notre équipe.
+				</div>
+			</div>
+			<form method="POST" action="https://formspree.io/moreleseb@hotmail.fr" id="demoform" class="text-left">
+				<input type="hidden" name="_language" value="fr" />
+				<input name="email" type="email" class="col-md-6" placeholder="Adresse E-mail *">
+				<input type="submit" id="submit" class=" submit btn btn-primary btn-xl" value="Demander un CRM gratuitement">
+			</form>
+		</div>
+	</div>
 </div>
 </div>
 </section>
@@ -93,7 +111,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.js"></script>
-<script src="js/contact.js"></script>
+<script src="js/demo.js"></script>
 <script src="js/countto.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/wow.min.js"></script>

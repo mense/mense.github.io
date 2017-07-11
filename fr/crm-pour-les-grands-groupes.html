@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Mense CRM - Request a Mense CRM demo</title>
+<title>Mense CRM - Un CRM pour les grands groupes</title>
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
@@ -21,10 +21,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-		if (window.navigator.language == 'fr') {
+     <script>
+		if (window.navigator.language !== 'fr') {
 			var page_name = window.location.pathname.split("/").pop();
-			window.location.replace("fr/" + page_name);
+			window.location.replace("/" + page_name);
 		}
     </script>
 </head>
@@ -45,16 +45,16 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav navbar-right">
 			<li>
-			<a class="page-scroll" href="index.html">Home</a>
+			<a class="page-scroll" href="index.html">Accueil</a>
 			</li>
 			<li>
-			<a class="page-scroll" href="crm.html">CRM</a>
+			<a class="page-scroll" href="crm.html">Un CRM</a>
 			</li>
 			<li>
-			<a class="page-scroll" href="cloud.html">Cloud</a>
+			<a class="page-scroll" href="cloud.html">Le cloud</a>
 			</li>
 			<li>
-			<a class="page-scroll" href="demo.html">Mense CRM in action</a>
+			<a class="page-scroll" href="signup.html">Mense CRM en action</a>
 			</li>
 			<li>
 			<a class="page-scroll" href="contact.html">Contact</a>
@@ -65,35 +65,16 @@
 </div>
 <!-- /.container -->
 </nav>
-<section id="contact">
-<div class="container">
-<div class="row">
-	<div class="col-md-8 col-md-offset-2 text-center">
-		<h2 class="section-heading">REQUEST A<br><b>MENSE CRM</b> DEMO</h2>
-		<hr class="primary">
-		<p>
-			All the features of Mense CRM are in the demo. <B> Within 5 min </ b> you'll see how we're going to get your business off the ground.
-		</p>
-		<div class="regularform">
-			<div class="done">
-				<div class="alert alert-success">
-					<button type="button" class="close" data-dismiss="alert">×</button>
-					Your message has been successfully sent to our team.
-				</div>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h1 class="section-heading  text-center">Un CRM pour les grands groupes</h1>
+				<hr>
+
 			</div>
-			<form method="POST" action="https://formspree.io/moreleseb@hotmail.fr" id="demoform" class="text-left">
-				<input type="hidden" name="_language" value="fr" />
-				<input name="name" type="text" class="col-md-6 norightborder" placeholder="Name *">
-
-				<input name="email" type="email" class="col-md-6" placeholder="E-mail *">
-				<input type="submit" id="submit" class=" submit btn btn-primary btn-xl" value="Request Demo">
-			</form>
 		</div>
-	</div>
-</div>
-</div>
 </section>
-
 <!-- Section Footer
 ================================================== -->
 <section class="bg-light">
@@ -102,7 +83,7 @@
 	<div class="col-md-12 text-center">
 		<h1 class="bottombrand wow flipInX"><img src="img/mense.png" alt="Mense CRM"></h1>
 		<p>
-			&copy; 2017 Mense CRM - Your customers are Here !
+			&copy; 2017 Mense CRM - Vos clients sont ici !
 		</p>
 	</div>
 </div>
@@ -113,7 +94,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.js"></script>
-<script src="js/demo.js"></script>
+<script src="js/contact.js"></script>
 <script src="js/countto.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/wow.min.js"></script>

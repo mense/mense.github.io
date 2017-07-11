@@ -14,19 +14,9 @@ jQuery(document).ready(function ($) {
 		//Simple validation to make sure user entered something
 		//Add your own error checking here with JS, but also do some error checking with PHP.
 		//If error found, add hightlight class to the text field
-		if (name.val()==='') {
-			name.addClass('error');
-			returnError = true;
-		} else name.removeClass('error');
-
 		if (email.val()==='') {
 			email.addClass('error');
 			returnError = true;
-		} else email.removeClass('error');
-
-		if(!regx.test(email.val())){
-          email.addClass('error');
-          returnError = true;
 		} else email.removeClass('error');
 
 		// Highlight all error fields, then quit.
@@ -36,7 +26,7 @@ jQuery(document).ready(function ($) {
 
 		//organize the data
 
-		var data = 'name=' + name.val() + '&email=' + email.val();
+		var data = '&email=' + email.val();
 
 
 		//show the loading sign
@@ -58,13 +48,11 @@ jQuery(document).ready(function ($) {
 			//success
 			success: function (html) {
 				//if contact.php returned 1/true (send mail success)
-				if (html.success == "email sent") {
+				if (html.success) {
 
 					//show the success message
 					$('.done').fadeIn('slow');
-
-					$(".form").find('input[type=text], textarea').val("");
-
+					$("form").hide();
 				} else alert('Sorry, unexpected error. Please try again later.');
 			}
 		});

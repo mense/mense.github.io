@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
 		//organize the data
 
 
-		var data = '&email=' + email.val();
+		var data = 'email=' + email.val();
 
 
 		//show the loading sign

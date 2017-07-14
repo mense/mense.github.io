@@ -14,11 +14,12 @@ jQuery(document).ready(function ($) {
 		//Simple validation to make sure user entered something
 		//Add your own error checking here with JS, but also do some error checking with PHP.
 		//If error found, add hightlight class to the text field
+
+
 		if (email.val()==='') {
 			email.addClass('error');
 			returnError = true;
 		} else email.removeClass('error');
-
 		// Highlight all error fields, then quit.
 		if(returnError === true){
 			return false;
@@ -26,7 +27,8 @@ jQuery(document).ready(function ($) {
 
 		//organize the data
 
-		var data = '&email=' + email.val();
+
+		var data = 'email=' + email.val();
 
 
 		//show the loading sign
@@ -36,20 +38,15 @@ jQuery(document).ready(function ($) {
 		$.ajax({
 			//this is the php file that processes the data and sends email
 			url: "https://formspree.io/moreleseb@hotmail.fr",
-
 			//GET method is used
 			type: "POST",
-
 			//pass the data
 			data: data,
-
 		    dataType: "json",
-
 			//success
 			success: function (html) {
 				//if contact.php returned 1/true (send mail success)
 				if (html.success) {
-
 					//show the success message
 					$('.done').fadeIn('slow');
 					$("form").hide();

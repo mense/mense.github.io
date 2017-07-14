@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Mense CRM is a simple and free CRM solution. Contact our experts and get your business off the ground.">
+<meta name="description" content="Mense CRM est une solution simple et gratuite de gestion de la relation client (CRM). Contactez nos experts et faites décoller votre business.">
 <meta name="author" content="Mense CRM">
-<title>Mense CRM - How can we help you ?</title>
+<meta charset="utf-8">
+<meta name="keywords" content="crm, relation client, crm gratuit, développement commercial, logiciel client, logiciel de gestion, logiciel de marketing">
+<meta http-equiv="Content-Language" content="fr_fr"/>
+<title>Mense CRM - Contactez notre équipe d'experts</title>
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-<meta name="keywords">
-<meta http-equiv="Content-Language" content="en_en"/>
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <!-- Custom Fonts -->
@@ -25,10 +26,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-		if (window.navigator.language == 'fr') {
+     <script>
+		if (window.navigator.language !== 'fr') {
 			var page_name = window.location.pathname.split("/").pop();
-			window.location.replace("fr/" + page_name);
+			window.location.replace("/" + page_name);
 		}
     </script>
 </head>
@@ -49,14 +50,13 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav navbar-right">
 			<li>
-			<a class="page-scroll" href="index.html">Home</a>
+			<a class="page-scroll" href="index.html">Accueil</a>
 			</li>
 			<li>
-			<a class="page-scroll" href="crm.html">CRM</a>
+			<a class="page-scroll" href="crm.html">Un CRM</a>
 			</li>
-
 			<li>
-			<a class="page-scroll" href="signup.html">Mense CRM in action</a>
+			<a class="page-scroll" href="signup.html">Mense CRM en action</a>
 			</li>
 			<li>
 			<a class="page-scroll" href="contact.html">Contact</a>
@@ -71,24 +71,25 @@
 <div class="container">
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 text-center">
-		<h1 class="section-heading">How can we help you ?</h1>
+		<h1 class="section-heading">CONTACTEZ <b>MENSE CRM</b></h1>
 		<hr class="primary">
 		<p>
-			Ready to start the adventure? Our experts are available to answer your questions.
+			Prêt à démarrer l'aventure ? Nos experts sont disponibles pour répondre à vos questions.
 		</p>
 		<div class="regularform">
 			<div class="done">
 				<div class="alert alert-success">
 					<button type="button" class="close" data-dismiss="alert">×</button>
-					Your message has been successfully sent to our team.
+					Votre message a correctement été envoyé envoyé à notre équipe.
 				</div>
 			</div>
 			<form method="POST" action="https://formspree.io/moreleseb@hotmail.fr" id="contactform" class="text-left">
 				<input type="hidden" name="_language" value="fr" />
-				<input name="name" type="text" class="col-md-6 norightborder" placeholder="Name *">
-				<input name="email" type="email" class="col-md-6" placeholder="E-mail *">
+				<input name="name" type="text" class="col-md-6 norightborder" placeholder="Nom *">
+				<input name="email" type="email" class="col-md-6" placeholder="Adresse E-mail *">
 				<textarea name="comment" class="col-md-12" placeholder="Message *"></textarea>
-				<input type="submit" id="submit" class="contact submit btn btn-primary btn-xl" value="Send message">
+				<input type="text" name="_gotcha" style="display:none" />
+				<input type="submit" id="submit" class="contact submit btn btn-primary btn-xl" value="Envoyer le message">
 			</form>
 		</div>
 	</div>
@@ -104,7 +105,7 @@
 	<div class="col-md-12 text-center">
 		<img src="img/mense.png" alt="Mense CRM">
 		<p>
-			&copy; 2017 Mense CRM - Your customers are here !
+			&copy; 2017 Mense CRM - Vos clients sont ici !
 		</p>
 		</p>
 	</div>
